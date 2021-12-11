@@ -2,10 +2,16 @@
   "name": "demo_rails6_tailwind",
   "private": true,
   "dependencies": {
-    "@rails/ujs": "^6.0.0",
-    "turbolinks": "^5.2.0",
+    "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
-    "@rails/actioncable": "^6.0.0"
+    "@rails/ujs": "^6.0.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.4",
+    "tailwindcss": "^3.0.1",
+    "turbolinks": "^5.2.0"
   },
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "scripts": {
+    "build:css": "tailwindcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.css"
+  }
 }
