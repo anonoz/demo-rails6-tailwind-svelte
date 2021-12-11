@@ -6,12 +6,15 @@
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "autoprefixer": "^10.4.0",
+    "esbuild": "^0.14.2",
+    "esbuild-svelte": "^0.6.0",
     "postcss": "^8.4.4",
     "tailwindcss": "^3.0.1",
     "turbolinks": "^5.2.0"
   },
   "version": "0.1.0",
   "scripts": {
-    "build:css": "tailwindcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.tailwind.css"
+    "build:css": "tailwindcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.tailwind.css",
+    "build": "node ./esbuild.config.js"
   }
 }
