@@ -5,9 +5,11 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <!-- The original sprockets one -->
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_link_tag "application" %>
+    
+    <!-- The tailwind one -->
+    <%= stylesheet_link_tag "application.tailwind" %>
   </head>
 
   <body>
