@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+.existing-css-file h1 {
+  font-size: 5rem;
+  color: #324343;
+}
